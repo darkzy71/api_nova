@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ayu-API</title>
+    <meta name="description"content="uma apirest 100% profissional e confiável para os seus negócios"/>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/matematica.css">
+</head>
+<body>
+	<button id="theme">&#xf1b2;</button>
+	<div id="gameover">
+		<h1>Fim de Jogo</h1>
+		<div id="score">Pontuação: <span>0</span></div>
+		<div id="highscore">Pontuação máxima: <span>0</span></div>
+		<button id="retry">Jogar Novamente!</button>
+	</div>
+	<div id="timer">tempo<div class="progress"></div></div>
+	<div id="problem">2+2=5</div>
+	<button id="correct">&#xf00c;</button>
+	<button id="wrong">&#xf00d;</button>
+	<div id="credits">Todos os direitos reservados <a href="https://wa.me/5562936180708">Breno 2020</a></div>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="/js/tappy.js"></script>
+	<script src="/js/jquery.storageapi.min.js"></script>
+	<script>
+		function getRandomInt(min, max) {
+		    return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+
+		var first,
+			second,
+			answer,
+			score = 0,
+			highscore = $.localStorage.get('highscore') || 0;
+
+		if ($.localStorage.get('theme') == 'light') {
+			$('body').addClass('light');
+		}
+
+		generateProblem();
+
+		$('#timer').addClass('hidden');
+		$('#gameover').hide();
+
+		function generateProblem() {
+			first = getRandomInt(2, 9);
+			second = getRandomInt(2, 9);
+			answer = first + second;
+
+			if (getRandomInt(0, 10) < 5) {
+				answer += getRandomInt(-3, 3);
+				answer = Math.max(0, answer);
+			}
+
+			$('#problem').text(first + '+' + second + '=' + answer);
+		}
+
+		function gameOver() {
+			if (score > highscore) {
+				highscore = score;
+
+				$.localStorage.set('highscore', highscore);
+				let freedin = Math.floor(Math.random() * 1) + 10
+                dinheiroadd(apikey, freedin)
+			}
+
+			$('#score span').text(score);
+			$('#highscore span').text(highscore);
+			$('#timer').addClass('hidden').find('.progress').stop();
+			$('#gameover').show();
+
+			score = 0;
+		}
+
+		function checkAnswer(guess) {
+			if ($('#gameover').is(':visible')) return false;
+
+			if ((guess && first + second == answer) || (!guess && first + second != answer)) {
+				addScore();
+			} else {
+				gameOver();
+			}
+		}
+
+		function startTimer() {
+			$('#timer').removeClass('hidden').find('.progress').css({
+				width: '100%'
+			}).stop().animate({
+				width: 0
+			}, {
+				duration: 1000 + Math.floor((2500 * (3.5 / score))),
+				easing: 'linear',
+				queue: false,
+				complete: gameOver
+			});
+		}
+
+		function addScore() {
+			score += 1;
+
+			generateProblem();
+			startTimer();			
+		}
+
+		$('#correct').on('tap', function() {
+			checkAnswer(true);
+		});
+
+		$('#wrong').on('tap', function() {
+			checkAnswer(false);
+		});
+
+		$('#retry').on('tap', function() {
+			$('#gameover').hide();
+		});
+
+		$('#theme').on('tap', toggleTheme);
+
+		function toggleTheme() {
+			$('body').toggleClass('light');
+
+			$.localStorage.set('theme', $('body').hasClass('light') ? 'light' : 'dark');
+		}
+
+		// Keyboard for desktop computers
+		$(document).on('keydown', function(e) {
+
+			// Enter key or space
+			if ($('#gameover').is(':visible') && (e.keyCode == 13 || e.keyCode == 32)) {
+				$('#retry').trigger('tap');
+
+				return;
+			}
+
+			// Left arrow or j
+			if (e.keyCode == 37 || e.keyCode == 74) {
+				$('#correct').trigger('tap');
+			}
+
+			// Right arrow or k
+			if (e.keyCode == 39 || e.keyCode == 75) {
+				$('#wrong').trigger('tap');
+			}
+		});
+	</script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53677226-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<% if (success_msg != '') {
+	%>
+	<script src="/js/swe.js"></script>
+	<script type="text/javascript">
+		Swal.fire({
+  title: `<%- success_msg %>`,
+  width: 600,
+  padding: '3em',
+  color: '#ff0000',
+  background: '#000',
+  backdrop: `
+    rgba(0, 0, 0, 0.5)
+    url("https://sweetalert2.github.io/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
+	</script>
+	<%
+} %>
+
+<% if (error_msg != '') {
+	%>
+	<script src="/js/swe.js"></script>
+	<script type="text/javascript">
+		Swal.fire({
+  title: `<%- error_msg %>`,
+  width: 600,
+  padding: '3em',
+  color: '#ff0000',
+  background: '#000',
+  backdrop: `
+    rgba(0, 0, 0, 0.5)
+    url("https://sweetalert2.github.io/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
+	</script>
+	<%
+} %>

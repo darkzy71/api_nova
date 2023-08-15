@@ -1,0 +1,24 @@
+{
+  "name": "caxinha",
+  "version": "0.2.62",
+  "description": "A npm of image manipulation, gif catcher and functions",
+  "main": "index.js",
+  "keywords": [
+    "JavaScript",
+    "canvas",
+    "jimp",
+    "Pagination",
+    "Discord",
+    "Discord.js",
+    "Discord-Bot",
+    "caixinha"
+  ],
+  "author": "Astha",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "0.21.1",
+    "canvas": "2.6.1",
+    "gifencoder": "2.0.1",
+    "jimp": "0.16.1"
+  }
+}

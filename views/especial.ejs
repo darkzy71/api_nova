@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tohka-API</title>
+    <meta name="description"content="uma api rest 100% profissional e confiável para os seus negócios, aqui você encontrará diversas apis de diferentes conteúdos."/>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/red.css" id="theme-color">
+</head>
+<body id="page-top" onload="getvisitor();">
+
+    
+<section class="smart-scroll">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand heading-black" href="/">
+                Tohka-API
+            </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span data-feather="grid"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/valores">
+                            <i class="fas fa-tags"></i><em width="18" height="18" class="mr-2"></em>
+                            Valores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/info">
+                            <i class="fas fa-sync-alt"></i><em width="18" height="18" class="mr-2"></em>
+                            Informações
+                        </a>
+                    </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/i/entrar">
+                                <i class="fas fa-sign-in-alt"></i><em width="18" height="18" class="mr-2"></em>
+                                Entrar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/i/rg">
+                                <i class="fas fa-clipboard-list"></i><em width="18" height="18" class="mr-2"></em>
+                                Registrar-se
+                            </a>
+                        </li>
+                           <li class="nav-item">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/admin">
+                                <i class="fas fa-code"></i><em class="mr-2"></em>
+                                administração
+                            </a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/msgbot">
+                                <i class="fas fa-robot"></i><em class="mr-2"></em>
+                                controlar bot
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/i/logout">
+                                <i class="fas fa-sign-out-alt"></i><em class="mr-2"></em>
+                                Deslogar
+                            </a>
+                        </li>                                                                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+
+    <div class="container">
+    <div class="navbaro">
+        <div class="hamburger-menu">
+            <div class="line line-1 text-primary"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+        <ul class="navo-list">
+            <li class="navo-item">
+                <a href="/docs/especial" class="navo-link"><i class="fas fa-gem"></i>
+                    <em class="ml-2"></em>Especial</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/ferramentas" class="navo-link"><i class="fas fa-tools"></i>
+                    <em class="ml-2"></em>Ferramentas</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/download" class="navo-link"><i class="fas fa-download"></i>
+                <em class="ml-2"></em>Download</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/textpro" class="navo-link"><i class="fas fa-image"></i>
+                    <em class="ml-2"></em>TextPro/Ephoto</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/pesquisa" class="navo-link"><i class="fas fa-search"></i>
+                    <em class="ml-2"></em>Pesquisa/+18</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/canvas" class="navo-link"><i class="fas fa-brush"></i>
+                <em class="ml-2"></em>Canvas/Ttp</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/porno" class="navo-link"><i class="fas fa-grin-hearts"></i>
+                    <em class="ml-2"></em>Hentai/Porno</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/outros" class="navo-link"><i class="fas fa-align-center"></i>
+                    <em class="ml-2"></em>Outros</a>
+            </li>
+        </ul>
+    </div>
+</div> 
+
+<section class="py-5">
+</section>
+
+<section class="py-5 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto text-center">
+                <h2 class="heading-black text-primary">Especial Doc</h2>
+                <p class="text-muted lead" style="font-style: italic;">Lista Especial</p>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="font-size: 14px;">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Apis</h4>
+                    </div>
+                    <div class="card-body pt-2 text-center">
+                        <div style="overflow-x:auto !important;">
+                            <table class="table mb-0" style="width: 100% !important;">
+                                <thead class="text-primary">
+                                    <tr>
+                                        <th scope="col">API NOME</th>
+                                        <th scope="col">PARÂMETRO</th>
+                                        <th scope="col">STATUS</th>
+                                        <th scope="col">INFORMAÇÃO</th>
+                                        <th scope="col">AÇÃO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pornohub Make</td>
+                                        <td>pagina</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>cria uma logo pornhub</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/phlogo" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tohka Upload</td>
+                                        <td>pagina</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>transforma arquivos em link</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/upload" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                   
+                                        <td>Get Html</td>
+                                        <td>site & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>pega o código</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/especial/getsource?site=https://github.com&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="text-white heading-black text-primary">Sub-Menu</h2>
+                <p class="text-light lead mb-5" style="font-style: italic;">A verdade é aquilo que resiste ao teste da experiência. - albert einstein</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Nome : <%= nome_usuario %></h4>
+                        <p class="card-text">Apikey :
+                            <strong><code class="text-primary"><%= apikey %></code></strong>
+                        </p>
+                        <p class="card-text">Limit Dia : <%= abreviar(limit) %></p>
+                        <p class="card-text">Total Requests : <%= abreviar(totalreq) %></p>
+                        <p class="card-text">Dinheiro : <%= abreviar(dinheiro) %></p>            
+                        <p class="card-text">Nivel : <%= nivel %></p>       
+                        <p class="card-text">Exp : <%= abreviar(exp) %>/<%= abreviar(reqXp) %></p>                                                     
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#" class="card-title"><h5>Recursos</h5></a>
+                        <div class="text-center">
+                            <a class="btn btn-primary mb-2" href="/docs/especial"><i class="fas fa-gem"></i>
+                                <em class="ml-2"></em>Especial</a>
+                            <a class="btn btn-primary mb-2" href="/docs/ferramentas"><i class="fas fa-tools"></i>
+                                <em class="ml-2"></em>Ferramentas</a>
+                            <a class="btn btn-primary mb-2" href="/docs/download"><i class="fas fa-download"></i>
+                                <em class="ml-2"></em>Download</a>
+                            <a class="btn btn-primary mb-2" href="/docs/textpro"><i class="fas fa-image"></i>
+                                <em class="ml-2"></em>TextPro/Ephoto</a>
+                            <a class="btn btn-primary mb-2" href="/docs/pesquisa"><i class="fas fa-search"></i>
+                                <em class="ml-2"></em>Pesquisa/+18</a>
+                            <a class="btn btn-primary mb-2" href="/docs/canvas"><i class="fas fa-brush"></i>
+                                <em class="ml-2"></em>Canvas/Ttp</a>
+                            <a class="btn btn-primary mb-2" href="/docs/porno"><i class="fas fa-grin-hearts"></i>
+                                <em class="ml-2"></em>Hentai/Porno</a>
+                            <a class="btn btn-primary mb-2" href="/docs/outros"><i class="fas fa-align-center"></i>
+                                <em class="ml-2"></em>Outros</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 divider top-divider mx-auto text-center pt-5">
+            <a class="btn btn-primary mb-2" 
+                href="/"><i class="fas fa-home"></i><em class="ml-2"></em>Ínicio
+            </a>
+            <a class="btn btn-primary mb-2" 
+                href="/docs"><i class="fas fa-file-alt"></i><em class="ml-2"></em>Docs
+            </a>
+            <a class="btn btn-primary mb-2" 
+                href="/perfil"><i class="fas fa-user"></i><em class="ml-2"></em>Perfil
+            </a>
+            <a class="btn btn-primary mb-2" 
+                href="/dinheiro"><i class="fas fa-money-bill-wave"></i><em class="ml-2"></em>Comprar Premium
+            </a>                        
+        </div>
+    </div>
+</section> 
+
+<section class="py-2">
+    <div class="col-12 text-muted text-center">
+        <a href="https://wa.me/5562936180708" target="_blank">2020 Breno - Todos os direitos reservados</a>
+    </div>
+</section>
+
+<div class="scroll-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+
+<section>
+<div class="container">
+    <div class="switcher-wrap">
+        <div class="switcher-trigger">
+            <span class="fa fa-gear"></span>
+        </div>
+        <div class="color-switcher">
+            <h6>Mudar Cores</h6>
+            <ul class="mt-3 clearfix">
+                <li class="bg-teal active" data-color="default" title="Default Teal"></li>
+                <li class="bg-purple" data-color="purple" title="Purple"></li>
+                <li class="bg-blue" data-color="blue" title="Blue"></li>
+                <li class="bg-red" data-color="red" title="Red"></li>
+                <li class="bg-green" data-color="green" title="Green"></li>
+                <li class="bg-indigo" data-color="indigo" title="Indigo"></li>
+                <li class="bg-orange" data-color="orange" title="Orange"></li>
+                <li class="bg-cyan" data-color="cyan" title="Cyan"></li>
+                <li class="bg-yellow" data-color="yellow" title="Yellow"></li>
+                <li class="bg-pink" data-color="pink" title="Pink"></li>
+            </ul>
+            <p>Você pode mudar a cor do tema</p>
+        </div>
+    </div>
+</div>
+</section>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

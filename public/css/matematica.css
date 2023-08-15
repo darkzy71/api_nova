@@ -1,0 +1,148 @@
+/* Windows phone */
+html {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+body {
+	font: 3em/1.5em arial, sans-serif;
+	text-align: center;
+	padding: 1em;
+	background: #262626;
+	color: #f2f2f2;
+}
+
+button {
+	font-size: 1em;
+	display: inline-block;
+	text-align: center;
+	border: none;
+	padding: 0.75em;
+	margin: 8px;
+	color: inherit;
+	background: gray;
+	border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+	border-radius: 6px;
+	cursor: pointer;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+button:hover {
+	box-shadow: 0 0 12px rgba(255, 255, 255, 0.7) inset;
+}
+
+button:focus {
+	outline: 0;
+}
+
+#gameover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	color: #f2f2f2;
+	background-color: rgba(0, 0, 0, 0.8);
+	text-transform: uppercase;
+	font-size: 0.5em;
+	line-height: 1.5em;
+	padding: 1em 1em;
+	z-index: 100;
+}
+
+#gameover h1 {
+	font-size: 2em;
+	line-height: 1em;
+	padding: 0;
+	margin: 0 0 1em;
+}
+
+#retry {
+	margin-top: 1em;
+	background: #FABE46;
+}
+
+#timer {
+	background: black;
+	border-radius: 6px;
+	margin: 8px auto;
+	font-size: 20px;
+	line-height: 40px;
+	position: relative;
+	color: #262626;
+	max-width: 512px;
+}
+
+#timer .progress {
+	position: absolute;
+	width: 0;
+	background: #FABE46;
+	border-radius: 6px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#timer.hidden .progress {
+	display: none;
+}
+
+#problem {
+	font: 1em/1.5em arial, sans-serif;
+}
+
+#correct, #wrong {
+	font: 1em/1em 'FontAwesome', sans-serif;
+	padding: 0;
+	width: 1.5em;
+	height: 1.5em;
+	color: #f2f2f2;
+}
+
+#theme {
+	position: fixed;
+	right: 0;
+	top: 0;
+	font: 16px/1em 'FontAwesome', sans-serif;
+	background: none;
+	box-shadow: none;
+	border: none;
+}
+
+#correct {
+	background: #B5C23E;
+}
+
+#wrong {
+	background: #EC5D5A;
+}
+
+#credits {
+	font-size: 14px;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#credits a {
+	color: #ffea00;
+}
+
+body.light {
+	color: #262626;
+	background: white;
+}
+
+body.light #timer {
+	background: #dedede;
+	color: #bbb;
+}

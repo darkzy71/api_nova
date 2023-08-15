@@ -1,0 +1,20 @@
+<% if (error != '') {
+	%>
+	<script src="/js/swe.js"></script>
+	<script type="text/javascript">
+				Swal.fire({
+  title: '<%- error %>',
+  width: 600,
+  padding: '3em',
+  color: '#d500f9',
+  background: '#000',
+  backdrop: `
+    rgba(0, 0, 0, 0.5)
+    url("https://sweetalert2.github.io/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
+	</script>
+	<%
+} %>

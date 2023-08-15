@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tohka-API</title>
+    <meta name="description"content="uma api rest 100% profissional e confiável para os seus negócios, aqui você encontrará diversas apis de diferentes conteúdos."/>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/red.css" id="theme-color">
+</head>
+<body id="page-top" onload="getvisitor();">
+
+    
+<section class="smart-scroll">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand heading-black" href="/">
+                Tohka-API
+            </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span data-feather="grid"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/valores">
+                            <i class="fas fa-tags"></i><em width="18" height="18" class="mr-2"></em>
+                            Valores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/info">
+                            <i class="fas fa-sync-alt"></i><em width="18" height="18" class="mr-2"></em>
+                            Informações
+                        </a>
+                    </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/i/entrar">
+                                <i class="fas fa-sign-in-alt"></i><em width="18" height="18" class="mr-2"></em>
+                                Entrar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/i/rg">
+                                <i class="fas fa-clipboard-list"></i><em width="18" height="18" class="mr-2"></em>
+                                Registrar-se
+                            </a>
+                        </li>
+                           <li class="nav-item">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/admin">
+                                <i class="fas fa-code"></i><em class="mr-2"></em>
+                                administração
+                            </a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/msgbot">
+                                <i class="fas fa-robot"></i><em class="mr-2"></em>
+                                controlar bot
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="/i/logout">
+                                <i class="fas fa-sign-out-alt"></i><em class="mr-2"></em>
+                                Deslogar
+                            </a>
+                        </li>                                                                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+
+    <div class="container">
+    <div class="navbaro">
+        <div class="hamburger-menu">
+            <div class="line line-1 text-primary"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+        <ul class="navo-list">
+            <li class="navo-item">
+                <a href="/docs/especial" class="navo-link"><i class="fas fa-gem"></i>
+                    <em class="ml-2"></em>Especial</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/ferramentas" class="navo-link"><i class="fas fa-tools"></i>
+                    <em class="ml-2"></em>Ferramentas</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/download" class="navo-link"><i class="fas fa-download"></i>
+                <em class="ml-2"></em>Download</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/textpro" class="navo-link"><i class="fas fa-image"></i>
+                    <em class="ml-2"></em>TextPro/Ephoto</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/pesquisa" class="navo-link"><i class="fas fa-search"></i>
+                    <em class="ml-2"></em>Pesquisa/+18</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/canvas" class="navo-link"><i class="fas fa-brush"></i>
+                <em class="ml-2"></em>Canvas/Ttp</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/porno" class="navo-link"><i class="fas fa-grin-hearts"></i>
+                    <em class="ml-2"></em>Hentai/Porno</a>
+            </li>
+            <li class="navo-item">
+                <a href="/docs/outros" class="navo-link"><i class="fas fa-align-center"></i>
+                    <em class="ml-2"></em>Outros</a>
+            </li>
+        </ul>
+    </div>
+</div> 
+
+<section class="py-5">
+</section>
+
+<section class="py-5 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto text-center">
+                <h2 class="heading-black text-primary">Textpro Doc</h2>
+                <p class="text-muted lead" style="font-style: italic;">Lista Textpro</p>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="font-size: 14px;">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Apis</h4>
+                    </div>
+                    <div class="card-body pt-2 text-center">
+                        <div style="overflow-x:auto !important;">
+                            <table class="table mb-0" style="width: 100% !important;">
+                                <thead class="text-primary">
+                                    <tr>
+                                        <th scope="col">API NOME</th>
+                                        <th scope="col">PARÂMETRO</th>
+                                        <th scope="col">STATUS</th>
+                                        <th scope="col">INFORMAÇÃO</th>
+                                        <th scope="col">AÇÃO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Natura</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto natura</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/natura?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blackpink</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto blackpink</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/blackpink?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blackpink 2</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto blackpink2</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/blackpink2?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Business</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto business</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/business?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diamond</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto diamond</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/diamond?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Summer</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto summer</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/summer?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Golden</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto golden</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/golden?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carved</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto carved</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/carved?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stone</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto Stone</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/stone?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Glass</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto glass</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/glass?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Luxury</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto luxury</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/luxury?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Whitegold</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto white gold</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/whitegold?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Giraffe</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto giraffe</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/giraffe?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sliced</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto sliced</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/sliced?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arcane</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto arcane</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/arcane?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Batman</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto batman</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/batman?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Neonglitch</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto neonglitch</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/neonglitch?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ancient</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto ancient</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/ancient?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Color Led</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto color led</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/colorled?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Neon Heart</td>
+                                        <td>nome e apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto neonheart</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/neonheart?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>New Year</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto newyear</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/newyear?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Candy</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto candy</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/candy?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crhstimas</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto crhstimas</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/crhstimas?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3dchristmas</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto 3dchristmas</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/3dchristmas?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>DepSea</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto depsea</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/depsea?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>                                                                     
+                                        <td>Green Neon</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto greeneon</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/greeneon?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Break</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto break</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/break?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                           </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pornhub</td>
+                                        <td>nome & nome2 & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>2 textos pornhub</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/textpro/pornhub?nome=breno&nome2=ayu&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                     </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="py-4"></section>
+        <div class="row">
+            <div class="col-md-8 divider top-divider mx-auto pt-3">
+            </div>
+            <div class="mx-auto text-center">
+                <h2 class="heading-black text-primary">Ephoto Doc</h2>
+                <p class="text-muted lead" style="font-style: italic;">Lista Ephoto</p>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="font-size: 14px;">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Apis</h4>
+                    </div>
+                    <div class="card-body pt-2 text-center">
+                        <div style="overflow-x:auto !important;">
+                            <table class="table mb-0" style="width: 100% !important;">
+                                <thead class="text-primary">
+                                    <tr>
+                                        <th scope="col">API NOME</th>
+                                        <th scope="col">PARÂMETRO</th>
+                                        <th scope="col">STATUS</th>
+                                        <th scope="col">INFORMAÇÃO</th>
+                                        <th scope="col">AÇÃO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pubg Mp4</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto pubg vídeo</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/pubgv?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ano Novo Mp4</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto anonovo vídeo</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/anonovo?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tigre mp4</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto tigre vídeo</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/tigrev?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Areia </td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto areia</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/areia?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blackpink Ephoto</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto blackpinkepo</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/blackpinkepo?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Black pink Ep v2</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto blackpink v2</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/balckpingv2?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tela</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto tela</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/tela?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brotoluz</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto brotoluz</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/brotoluz?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Borracha</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto borracha</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/borracha?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brilhante</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto brilhante</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/brilhante?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Papel</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto papel</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/papel?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diabo</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto diabo</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/diabo?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Urso</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto urso</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/urso?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blur</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto blur</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/blur?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crack</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto crack</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/crack?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vietnam</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto vietnam</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/vietnam?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Goldt</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto goldt</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/goldt?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Grafit 4</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto grafit4</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/grafit4?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biscoito</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto biscoito</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/biscoito?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pig</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto pig</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/pig?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seta ephoto</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>1 texto seta</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/seta?nome=breno&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Grafite</td>
+                                        <td>nome & apikey</td>
+                                        <td><div class="text-primary">
+                                            <i class="fas fa-check fa-sm"></i>
+                                        </div></td>
+                                        <td>2 texto grafite</td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="/api/ephoto/grafite?nome=breno&nome2=ayu&apikey=<%= apikey %>" target="_blank">
+                                                ver</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="text-white heading-black text-primary">Sub-Menu</h2>
+                <p class="text-light lead mb-5" style="font-style: italic;">A verdade é aquilo que resiste ao teste da experiência. - albert einstein</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Nome : <%= nome_usuario %></h4>
+                        <p class="card-text">Apikey :
+                            <strong><code class="text-primary"><%= apikey %></code></strong>
+                        </p>
+                        <p class="card-text">Limit Dia : <%= abreviar(limit) %></p>
+                        <p class="card-text">Total Requests : <%= abreviar(totalreq) %></p>
+                        <p class="card-text">Dinheiro : <%= abreviar(dinheiro) %></p>            
+                        <p class="card-text">Nivel : <%= nivel %></p>       
+                        <p class="card-text">Exp : <%= abreviar(exp) %>/<%= abreviar(reqXp) %></p>                                                     
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#" class="card-title"><h5>Recursos</h5></a>
+                        <div class="text-center">
+                            <a class="btn btn-primary mb-2" href="/docs/especial"><i class="fas fa-gem"></i>
+                                <em class="ml-2"></em>Especial</a>
+                            <a class="btn btn-primary mb-2" href="/docs/ferramentas"><i class="fas fa-tools"></i>
+                                <em class="ml-2"></em>Ferramentas</a>
+                            <a class="btn btn-primary mb-2" href="/docs/download"><i class="fas fa-download"></i>
+                                <em class="ml-2"></em>Download</a>
+                            <a class="btn btn-primary mb-2" href="/docs/textpro"><i class="fas fa-image"></i>
+                                <em class="ml-2"></em>TextPro/Ephoto</a>
+                            <a class="btn btn-primary mb-2" href="/docs/pesquisa"><i class="fas fa-search"></i>
+                                <em class="ml-2"></em>Pesquisa/+18</a>
+                            <a class="btn btn-primary mb-2" href="/docs/canvas"><i class="fas fa-brush"></i>
+                                <em class="ml-2"></em>Canvas/Ttp</a>
+                            <a class="btn btn-primary mb-2" href="/docs/porno"><i class="fas fa-grin-hearts"></i>
+                                <em class="ml-2"></em>Hentai/Porno</a>
+                            <a class="btn btn-primary mb-2" href="/docs/outros"><i class="fas fa-align-center"></i>
+                                <em class="ml-2"></em>Outros</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 divider top-divider mx-auto text-center pt-5">
+            <a class="btn btn-primary mb-2" 
+                href="/"><i class="fas fa-home"></i><em class="ml-2"></em>Ínicio
+            </a>
+            <a class="btn btn-primary mb-2" 
+                href="/docs"><i class="fas fa-file-alt"></i><em class="ml-2"></em>Docs
+            </a>
+            <a class="btn btn-primary mb-2" 
+                href="/perfil"><i class="fas fa-user"></i><em class="ml-2"></em>Perfil
+            </a>
+            <a class="btn btn-primary mb-2" 
+                href="/dinheiro"><i class="fas fa-money-bill-wave"></i><em class="ml-2"></em>Comprar Premium
+            </a>                        
+        </div>
+    </div>
+</section> 
+
+<section class="py-2">
+    <div class="col-12 text-muted text-center">
+        <a href="https://wa.me/5562936180708" target="_blank">2020 Breno - Todos os direitos reservados</a>
+    </div>
+</section>
+
+<div class="scroll-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+
+<section>
+<div class="container">
+    <div class="switcher-wrap">
+        <div class="switcher-trigger">
+            <span class="fa fa-gear"></span>
+        </div>
+        <div class="color-switcher">
+            <h6>Mudar Cores</h6>
+            <ul class="mt-3 clearfix">
+                <li class="bg-teal active" data-color="default" title="Default Teal"></li>
+                <li class="bg-purple" data-color="purple" title="Purple"></li>
+                <li class="bg-blue" data-color="blue" title="Blue"></li>
+                <li class="bg-red" data-color="red" title="Red"></li>
+                <li class="bg-green" data-color="green" title="Green"></li>
+                <li class="bg-indigo" data-color="indigo" title="Indigo"></li>
+                <li class="bg-orange" data-color="orange" title="Orange"></li>
+                <li class="bg-cyan" data-color="cyan" title="Cyan"></li>
+                <li class="bg-yellow" data-color="yellow" title="Yellow"></li>
+                <li class="bg-pink" data-color="pink" title="Pink"></li>
+            </ul>
+            <p>Você pode mudar a cor do tema</p>
+        </div>
+    </div>
+</div>
+</section>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
